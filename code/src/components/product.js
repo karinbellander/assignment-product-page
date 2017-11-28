@@ -12,21 +12,21 @@ class Product extends React.Component{
 
           <div className="productImage"><img src={this.props.productImage} className="image"/></div>
 
-          <div>
+          <div className="productList">
             <ul>
               <li>{this.props.productType}</li>
               <li>{this.props.productSubstance}</li>
               <li>{this.props.productSize}</li>
-              <li>{this.props.productNumberInPack}</li>
+              <li>{this.props.productNumberInPack} <p>st i förpackningen</p></li>
             </ul>
           </div>
 
-          <div>
-            {this.props.productPrice}<p>kr</p>
-            <p>Köp</p>
+          <div className="price-buy">
+            <div className="price">{this.props.productPrice}<p>kr</p></div>
+            <div className="buy"><a href=""><p>Köp</p></a></div>
           </div>
 
-          <div>{this.props.productDeliveryTime}</div>
+          <div className="delivery"><p>Leveranstid </p>{this.props.productDeliveryTime}</div>
 
 
 

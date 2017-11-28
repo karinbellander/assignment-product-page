@@ -10,7 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-
+        <div className="introProducts"><h1>Products</h1></div>
 
           <div className="productContainer">
             {productsJson.products.map((item) => {
@@ -20,8 +20,8 @@ class App extends React.Component {
                 productPrice={item.price}
                 productType={item.type}
                 productSize={item.size}
-                productNumberInPack={item.number}
-                productDeliveryTime={item.delivery}
+                productNumberInPack={item.numberInPack}
+                productDeliveryTime={item.deliveryTime}
                 productImage={item.image}
                 productSubstance={item.substance}
               />
