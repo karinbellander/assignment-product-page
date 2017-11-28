@@ -3,3 +3,40 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.productContainer {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.productBox {
+  width: 20%;
+  background-color: green;
+  margin: 2%;
+}
+
+.productName {
+  font-size: 15px;
+  margin: 8%;
+}
+
+.productImage {
+
+  height: 20vh;
+  overflow: hidden;
+  background-color: white;
+  margin: 8%;
+}
+
+.image {
+  width: 100%;
+}
+
+p {
+  display: inline;
+}
